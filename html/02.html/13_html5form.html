@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>html5 form</title>
+</head>
+<body>
+	<!-- novalidate : 문법검증하지 않겠다. -->
+<form action="" method="post" novalidate="novalidate">
+	<fieldset>
+		<!-- disabled : 사용하지 않음 -->
+		<legend>html5 form</legend>
+		<p>
+			<label for="username">이름</label>
+			<input type="text" id="username" name="username" value="" autofocus="autofocus">
+		</p>
+		<p>
+			<label for="useremail">이메일</label>
+			<input type="email" id="useremail" name="useremail" value="" placeholder="useremail">
+			<!-- type="" : 문법검증 -->
+		</p>
+		<p>
+			<label for="userurl">웹사이트</label>
+			<input type="url" id="userurl" name="userurl" value="">
+		</p>
+		<p>
+			<label for="order">주문수량</label>
+			<input type="number" id="order" name="order" min="1" max="10" value="3">
+			<span>개</span>
+		</p>
+		<p>
+			<label for="userrange">길이</label>
+			<input type="range" id="userrange" name="userrange" min="0" max="100" step="10" value="30">
+		</p>
+		1<p>
+			<label for="userdate">제출일</label>
+			<input type="date" id="userdate" name="userdate" min="2018-01-01" max="2018-07-13" value="2018-07-12">
+		</p>
+		<p>
+			<label for="usercolor">색상선택</label>
+			<input type="color" id="usercolor" name="usercolor" value="#ff0000">
+		</p>
+		<p>
+			<label for="usertel">연락처</label>
+			<input type="tel" id="usertel" name="usertel" value="">
+		</p>
+
+	</fieldset>
+	<input type="submit" value="전송">
+</form>
+<!-- autofocus : 커서, placeholder : 미리 표시, required : 필수 요소, autocomplete : 자동 완성(autocomplet="off" : 끄고싶을 때) -->
+</body>
+</html>
